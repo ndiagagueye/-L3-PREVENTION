@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.ChatMessageActivity">
+
+    <TextView
+        android:id="@+id/tv_no_dicussions_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/font_text_bold"
+        android:layout_centerInParent="true"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/background_post_image"
+        android:text="Vous n'avez pas encore de discussion"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_chat_app"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fl_new_chat_message"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        android:layout_alignRight="@id/rv_chat_app"
+        android:layout_alignBottom="@id/rv_chat_app"
+        app:srcCompat="@drawable/ic_new_discussion" />
+
+
+</RelativeLayout>

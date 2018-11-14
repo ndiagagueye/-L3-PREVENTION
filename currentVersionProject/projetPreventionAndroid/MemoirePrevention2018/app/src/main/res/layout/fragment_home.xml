@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:id="@+id/second_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_row"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_linear_scale_progress_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:indicator="LineScale"
+            app:indicator_color="#ff00" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_no_home_get"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/font_text_bold"
+        android:layout_gravity="center"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/background_post_image"
+        android:text="Aucune alerte pour l'instant"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/alerte_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

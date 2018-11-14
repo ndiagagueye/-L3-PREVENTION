@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_list_discussion"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="2dp"
+    android:elevation="5dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_like_user"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/send_alerte"/>
+
+    <TextView
+        android:id="@+id/tv_like_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="username"
+        android:layout_marginLeft="70dp"
+        android:textColor="@color/colorAccentDark"
+        style="@style/font_text_bold"/>
+
+
+    <ImageView
+        android:id="@+id/iv_status_user"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center|right"
+        android:visibility="gone"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_off_line"/>
+
+
+    <include layout="@layout/item_divider"
+        android:layout_gravity="bottom"
+        android:layout_height="0.0002dp"
+        android:layout_width="wrap_content"
+        />
+
+
+
+
+</FrameLayout>

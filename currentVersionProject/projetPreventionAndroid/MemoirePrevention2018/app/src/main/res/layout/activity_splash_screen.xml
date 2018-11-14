@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/primary_dark"
+    tools:context="com.example.gueye.memoireprevention2018.activities.SplashScreenActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+        <LinearLayout
+            android:layout_margin="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <ImageView
+                android:id="@+id/ic_launch"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/png_slide_1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/colorLightDark"
+                android:text="Prévention"
+                android:fontFamily="@font/fira_sans"/>
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/material_design_ball_spin_fade_loader"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:visibility="visible"
+                app:indicator="BallSpinFadeLoader"
+                 />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+
+    <!--<RelativeLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_ball_pulse_loader_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:indicator="BallPulse"
+            app:indicator_color="#ff00" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_ball_clip_rotate_multiple_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            app:indicator="BallClipRotateMultiple"
+            app:indicator_color="#ff00" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_linear_scale_progress_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            app:indicator="LineScale"
+            app:indicator_color="#ff00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/third_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/second_row"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_ball_rotate_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            app:indicator="BallRotate"
+            app:indicator_color="#ff00" />
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_linear_spin_fade_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="visible"
+            app:indicator="LineSpinFadeLoader"
+            app:indicator_color="#ff00" />
+
+    </RelativeLayout>
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/material_design_ball_grid_beat_loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/third_row"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:visibility="visible"
+        app:indicator="BallGridBeat"
+        app:indicator_color="#ff00" />-->
+
+    <!--
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/material_design_ball_scale_ripple_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/material_design_ball_grid_beat_loader"
+            android:layout_marginTop="20dp"
+            android:visibility="visible"
+            app:indicator="BallScaleRipple"
+            app:indicator_color="#ff00" />
+    -->
+
+</RelativeLayout>
